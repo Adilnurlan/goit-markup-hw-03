@@ -58,6 +58,7 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--accent-color);
+    margin-right: 93px;
 }
 .accent {
     font-family: var(--secondary-font-family);
@@ -78,8 +79,8 @@ body {
     line-height: 1.67;
     text-align: center;
     letter-spacing: 0.03em;
-
     color: #212121;
+    margin-bottom: 50px;
 }
 
 .menu .link.current {
@@ -87,9 +88,15 @@ body {
 }
 /* ==============/COMPONENTS============== */
 /* ==============HEADER============== */
-.header-conteiner {
+.header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.header-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .navigation {
@@ -108,6 +115,18 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contacts {
+    display: flex;
+}
+
+.mail {
+    margin-right: 50px;
 }
 
 .menu-link:hover,
@@ -129,13 +148,17 @@ body {
 /* ==============/HEADER============== */
 /* ==============HERO============== */
 .main-title {
-    font-weight: 900;
+    font-weight: 900;   
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-bottom: 30px;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .modal-btn {
@@ -149,6 +172,10 @@ body {
     color: #FFFFFF;
     background-color: var(--accent-color);
     cursor: pointer;
+    margin: 0 auto;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    padding: 10px 32px;
 }
 
 .modal-btn:hover,
@@ -158,10 +185,23 @@ body {
 
 .hero {
     background-color: #2F303A;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 /* ==============/HERO============== */
 
 /* =============OUR MISSION============== */
+.list-description {
+    display: flex;
+    justify-content: space-around;
+}
+
+.our-mission {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .title-description {
     font-weight: 700;
     font-size: 14px;
@@ -170,6 +210,7 @@ body {
     text-transform: uppercase;
 
     color: #212121;
+    margin-bottom: 10px;
 }
 
 .description {
@@ -181,13 +222,49 @@ body {
     color: #757575;
 }
 
+.description-mission {
+    flex-basis: calc((100% - 120px) / 4);
+}
+
 /* ==============/OUR MISSION============== */
 
 /* =============WHAT WE DO============== */
+.whatwedo {
+    /* padding-top: 94px; */
+    padding-bottom: 94px;
+}
 
+.whatwedo-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.section-photo-list {
+    flex-basis: calc((100% - 90px) / 3);
+}
 /* =============/WHAT WE DO============== */
 
 /* =============OUR TEAM============== */
+.our-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #F5F4FA;
+}
+
+.employees {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.employees-card {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
 .employees-name {
     font-weight: 500;
     font-size: 16px;
@@ -208,8 +285,13 @@ body {
     color: #757575;
 }
 
-.our-team {
-    background-color: #F5F4FA;
+.name-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.employees-name {
+    margin-bottom: 10px;
 }
 /* =============/OUR TEAM============== */
 
@@ -224,6 +306,8 @@ body {
 }
 
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: #2F303A;
 }
 
@@ -238,6 +322,30 @@ body {
 /* =============/FOOTER============== */
 
  /* =============PORTFOLIO============== */
+.portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.selector {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.portfolio-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.cards-list {
+    flex-basis: calc((100% - 90px) / 3);
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
 .portfolio-btn {
     font-weight: 500;
     font-size: 16px;
@@ -247,12 +355,19 @@ body {
     cursor: pointer;
     color: #212121;
     background-color: #F5F4FA;
+    border: 1px solid #F5F4FA;
+    border-radius: 4px;
+    padding: 6px 22px;
 }
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
     background-color: var(--accent-color);
     color: #FFFFFF;
+}
+
+.selector-list:not(:last-child) {
+    margin-right: 8px;
 }
 
 .projects-name {
@@ -262,6 +377,13 @@ body {
     letter-spacing: 0.06em;
 
     color: #212121;
+    margin-bottom: 4px;
+}
+
+.card-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
 }
 
 .project-field {
