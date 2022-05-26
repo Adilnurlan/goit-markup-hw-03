@@ -89,8 +89,7 @@ body {
 /* ==============/COMPONENTS============== */
 /* ==============HEADER============== */
 .header {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header-container {
@@ -110,11 +109,14 @@ body {
 }
 
 .menu-link {
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .menu-item:not(:last-child) {
@@ -185,7 +187,6 @@ body {
 
 .hero {
     background-color: #2F303A;
-    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -194,7 +195,7 @@ body {
 /* =============OUR MISSION============== */
 .list-description {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .our-mission {
@@ -223,7 +224,11 @@ body {
 }
 
 .description-mission {
-    flex-basis: calc((100% - 120px) / 4);
+    flex-basis: calc((100%-120px)/4);
+}
+
+.description-mission:not(:last-child) {
+    margin-right: 30px;
 }
 
 /* ==============/OUR MISSION============== */
@@ -296,6 +301,14 @@ body {
 /* =============/OUR TEAM============== */
 
 /* =============FOOTER============== */
+.address {
+    margin-top: 20px;
+}
+
+.contact-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
 .address-link {
     font-weight: 400;
     font-size: 14px;
@@ -341,7 +354,7 @@ body {
 }
 
 .cards-list {
-    flex-basis: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 120px)/3);
     margin-top: 30px;
     margin-left: 30px;
 }
@@ -384,6 +397,10 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
+    padding-right: 24px;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
 }
 
 .project-field {
